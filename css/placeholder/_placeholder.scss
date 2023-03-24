@@ -1,3 +1,4 @@
+@import '../mixins/mixins';
 %button{
     background-color: #000;
     color: #fff;
@@ -10,7 +11,7 @@
     cursor: pointer;
     transition: all .3s ease;
     &:hover{
-        background-color: #fff;
+        background-color: #000;
         color: #000;
     }
 }
@@ -22,4 +23,18 @@
     text-transform: uppercase;
     text-decoration: underline;
     text-align: center;
+}
+
+%body{
+    background-image: url(	https://as2.ftcdn.net/v2/jpg/03/06/39/23/1000_F_306392378_3naTATYf17u0mCb8a66eoB78k5QBo1Zh.jpg);
+    font-family: cursive;
+    color: rgb(19, 18, 18);
+    height: 700px;
+    display: block;
+}
+
+%resultado{
+    border: 1px solid #000;
+    box-shadow: 5px 5px 5px #000;
+    
 }
