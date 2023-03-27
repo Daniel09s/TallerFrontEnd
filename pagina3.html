@@ -3,11 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilospagina3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
 <body>
+    <h3 align="center">Formulario de datos</h3>
+    <div id="contenedor">
+        <div>
+            <form align="center" id="formulario">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                <input type="number" name="edad" id="edad" placeholder="Edad">
+                <input type="mail" name="correo" id="email" placeholder="Correo" pattern=".+@globex\.com" required>
+                <input type="number" name="telefono" id="telefono" placeholder="Telefono">
+                <input type="text" name="direccion" id="direccion" placeholder="Direccion">
+                <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
+                <p>Comentario:</p>
+                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea><br>
+                <button onclick="enviarDatos()" type="button">Enviar</button>
+                <button onclick="limpiarMensaje()" type="button">Eliminar comentario</button> 
+                <button onclick="limpiarDatos()" type="button">Eliminar todos los datos</button>
+            </form>
+        </div>
+    </div>
+    
+    
+
     <h1 align="center"><<a href="pagina1.html">1</a> <a href="index.html">2</a>></h1>
+
 </body>
+<script src="js/formulario.js"></script>
 </html>

@@ -1,0 +1,59 @@
+@import '../css/placeholder/placeholders';
+@import '../css/placeholder/ids';
+@import '../css/mixin/mixins';
+body {
+    background-image: url(https://as2.ftcdn.net/v2/jpg/03/06/39/23/1000_F_306392378_3naTATYf17u0mCb8a66eoB78k5QBo1Zh.jpg);
+    font-family: cursive;
+    color: rgb(19, 18, 18);
+    height: 700px;
+    padding: 18px;
+    display: block;
+  }
+div{
+    border: 1px solid black;
+    margin: 2px auto;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+
+}
+button{
+    color: white;
+    background-color: black;
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+}
+
+input{
+    width: 250px;
+    display: block;
+    padding: 10px;
+    margin: 2px auto;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    text-align: left;
+    margin: 2px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+#contenedor{
+    margin: 10px auto;
+    width: 320px;
+    height: 550px;
+    background-color: black;
+}
+h3{
+    @extend %titulo;
+}

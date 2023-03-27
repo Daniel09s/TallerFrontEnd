@@ -1,80 +1,116 @@
-@import '../css/placeholder/placeholder';
-@import '../css/mixins/mixins';
-
+@import '../css/mixin/mixins';
+@import '../css/placeholder/placeholders';
+@import '../css/placeholder/ids';
 $color_primario: rgb(202, 202, 202);
 $color_secundario: rgb(126, 122, 122);
-$color_terciario: rgb(230, 20, 20);
-$negro : black;
+$color_terciario: rgb(223, 51, 51);
 $neutro: white;
 
 button{
     @extend %button;
-    
     &:hover{
-        @include hover;
+        background-color: $neutro;
     }
 }
 label{
-    padding: 15px;   
-    margin: 10px; 
+    @include label;
 }
 input{
-    padding: 10px;
-    margin: 10px;
+    @include input;
 }
 html{
     background-color: $color_primario;
 }
 body{
-    @extend %body;
+    background-image: url(https://as2.ftcdn.net/v2/jpg/03/06/39/23/1000_F_306392378_3naTATYf17u0mCb8a66eoB78k5QBo1Zh.jpg);
+    font-family: cursive;
+    color: rgb(19, 18, 18);
+    height: 750px;
+    padding: 18px;
+    display: block;
+}
+select {
+    padding: 10px;
+    background-color: $neutro;
+    border-radius: 5px;
+    font-family: Helvetica;
+    color: black;
+    border: 2px solid black;
+}
+h1{
+    align-items: center;
+    padding: 10px;
+}
+li{
+    @include li;
+}
+a{
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
 }
 tr{
     display: inline-block;
 }
+.P1{
+    @include P1;
+}
 p{
     @extend %p;
-}
-#id{
-    color: red;
-    text-decoration: none;
 }
 img{
     width: 500px;
     height: 300px;
     padding: 20px;
 }
-#resultado{
-    @extend %resultado;
-    border: 1px solid red;
-}
 div{
-    border: 1px solid black;
     margin: 0 auto;
     width: 550px;
     height: 550px;
-    background-color: $color_secundario;
-    box-shadow: 5px 5px 5px $negro;
     border-radius: 10px;
 }
-label{
+h3{
+    @extend %titulo;
+}
 
-    padding: 10px;
-    background-color: $color_terciario;
-    border-radius: 5px;
+#resultado{
+    @extend %resultado;
 }
-select {
-    padding: 10px;
-    background-color: $color_terciario;
-    border-radius: 5px;
-    font-family: Helvetica;
-    color: white;
+#gif{
+    @extend %gif;
 }
-h1{
-    align-items: center;
-    padding: 10px;
+#titulo{
+    @extend %titulo;
 }
-a{
-    padding: 5px;
-    display: inline-block;
-    text-decoration: none;
+#contenedor{
+    @extend %contenedor;
+ }
+#descripcion{
+   @extend %descripcion;
 }
+
+#perros, #razas{
+    @extend %perros, %razas;
+}
+#razas{
+    @extend %razas;
+}
+
+#contenedor2{
+    @extend %contenedor2;
+}
+#uno,#dos,#tres{
+    @extend %uno, %dos, %tres;
+}
+#C2{
+    @include U2;
+}
+#C3{
+    @include U3;
+}
+
+#tiposP{
+    @extend %tiposP;
+}
+

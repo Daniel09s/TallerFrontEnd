@@ -11,7 +11,8 @@ button {
   transition: all 0.3s ease;
 }
 button:hover {
-  background-color: #000;
+  background-color: #fff;
+  border: 1px solid black;
   color: #000;
 }
 
@@ -24,28 +25,92 @@ p {
   text-align: center;
 }
 
-body {
-  background-image: url(https://as2.ftcdn.net/v2/jpg/03/06/39/23/1000_F_306392378_3naTATYf17u0mCb8a66eoB78k5QBo1Zh.jpg);
-  font-family: cursive;
-  color: rgb(19, 18, 18);
-  height: 700px;
-  display: block;
-}
-
 #resultado {
-  border: 1px solid #000;
-  box-shadow: 5px 5px 5px #000;
+  margin: 0 auto;
+  width: 550px;
+  height: 550px;
+  background: linear-gradient(white 60%, gray);
+  box-shadow: 10px 5px 5px black;
+  border-radius: 10px;
 }
 
-button:hover:hover {
+#gif {
+  width: 100px;
+  height: 65px;
+}
+
+#titulo, h3 {
+  border: 3px solid black;
+  width: 330px;
   background-color: white;
-  color: black;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 27px;
+}
+
+#contenedor {
+  width: auto;
+  height: 550px;
   border: 1px solid black;
+  background-color: #131212;
+  padding: 10px;
+}
+
+#descripcion {
+  text-align: center;
+  background-color: white;
+  color: rgb(93, 93, 93);
+  width: 550px;
+  height: 530px;
+  border-radius: 10px;
+  float: left;
+  padding: 10px;
+}
+
+#perros, #razas, #razas {
+  text-align: center;
+  color: rgb(93, 93, 93);
+  background-color: white;
+  display: block;
+  float: right;
+  width: 840px;
+  padding: 10px;
+  height: 245px;
+  border-radius: 10px;
+}
+
+#perros, #razas {
+  margin-top: 10px;
+}
+
+#contenedor2 {
+  display: flex;
+  height: 150px;
+  background-color: white;
+  border: 1px solid white;
+  font-size: 1px;
+}
+
+#uno, #dos, #tres, #dos, #tres {
+  padding: 5px;
+  height: 120px;
+  border: 0;
+  background-color: white;
+}
+
+#tiposP {
+  display: flex;
+}
+
+button:hover {
+  background-color: white;
 }
 
 label {
-  padding: 15px;
-  margin: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
 }
 
 input {
@@ -57,13 +122,50 @@ html {
   background-color: rgb(202, 202, 202);
 }
 
+body {
+  background-image: url(https://as2.ftcdn.net/v2/jpg/03/06/39/23/1000_F_306392378_3naTATYf17u0mCb8a66eoB78k5QBo1Zh.jpg);
+  font-family: cursive;
+  color: rgb(19, 18, 18);
+  height: 750px;
+  padding: 18px;
+  display: block;
+}
+
+select {
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  font-family: Helvetica;
+  color: black;
+  border: 2px solid black;
+}
+
+h1 {
+  align-items: center;
+  padding: 10px;
+}
+
+li {
+  font-size: 20px;
+  text-align: left;
+}
+
+a {
+  padding: 5px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
 tr {
   display: inline-block;
 }
 
-#id {
-  color: red;
-  text-decoration: none;
+.P1 {
+  color: rgb(126, 122, 122);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 img {
@@ -72,41 +174,18 @@ img {
   padding: 20px;
 }
 
-#resultado {
-  border: 1px solid red;
-}
-
 div {
-  border: 1px solid black;
   margin: 0 auto;
   width: 550px;
   height: 550px;
-  background-color: rgb(126, 122, 122);
-  box-shadow: 5px 5px 5px black;
   border-radius: 10px;
 }
 
-label {
-  padding: 10px;
-  background-color: rgb(230, 20, 20);
-  border-radius: 5px;
+#C2 {
+  font-size: 20px;
 }
 
-select {
-  padding: 10px;
-  background-color: rgb(230, 20, 20);
-  border-radius: 5px;
-  font-family: Helvetica;
-  color: white;
-}
-
-h1 {
-  align-items: center;
-  padding: 10px;
-}
-
-a {
-  padding: 5px;
-  display: inline-block;
-  text-decoration: none;
+#C3 {
+  font-size: 20px;
+  text-align: left;
 }/*# sourceMappingURL=estilos.css.map */
