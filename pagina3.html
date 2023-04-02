@@ -15,15 +15,15 @@
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                 <input type="text" name="apellido" id="apellido" placeholder="Apellido">
                 <input type="number" name="edad" id="edad" placeholder="Edad">
-                <input type="mail" name="correo" id="email" placeholder="Correo" pattern=".+@globex\.com" required>
+                <input type="mail" name="correo" id="correo" placeholder="Correo" required>
                 <input type="number" name="telefono" id="telefono" placeholder="Telefono">
                 <input type="text" name="direccion" id="direccion" placeholder="Direccion">
                 <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
                 <p>Comentario:</p>
                 <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea><br>
-                <button onclick="enviarDatos()" type="button">Enviar</button>
-                <button onclick="limpiarMensaje()" type="button">Eliminar comentario</button> 
-                <button onclick="limpiarDatos()" type="button">Eliminar todos los datos</button>
+                <button onclick="EnviarD()" type="button">Enviar</button>
+                <button onclick="BorrarM()" type="button">Eliminar comentario</button> 
+                <button onclick="LimpiarD()" type="button">Eliminar todos los datos</button>
             </form>
         </div>
     </div>
@@ -33,5 +33,6 @@
     <h1 align="center"><<a href="pagina1.html">1</a> <a href="index.html">2</a>></h1>
 
 </body>
+<script src="js/comentario.js"></script>
 <script src="js/formulario.js"></script>
 </html>

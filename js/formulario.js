@@ -1,25 +1,22 @@
-function enviarDatos() {
-let nombre = document.getElementById("nombre").value;
-let apellido = document.getElementById("apellido").value;
-let edad = document.getElementById("edad").value;   
-let email = document.getElementById("email").value;
-let telefono = document.getElementById("telefono").value;   
-let direccion = document.getElementById("direccion").value;
-let ciudad = document.getElementById("ciudad").value;
-let comentario = document.getElementById("comentario").value;
+let datos = new comentarioFormulario();
+//let resultado = datos.enviarDatos();
 
-
-if( nombre === "" || apellido === "" || edad === "" || telefono === "" || direccion === "" || ciudad === "" || comentario === ""){
-    alert("Todos los campos son obligatorios");
-}else{
-    alert("Datos enviados correctamente");
-    limpiarDatos();
+function EnviarD(){
+    let mostrard = datos.enviarDatos();
+    return mostrard;
 }
 
+function LimpiarD(){
+    let limpiar = datos.limpiarDatos();
+    return limpiar;
 }
 
+function BorrarM(){
+    let borrar = datos.limpiarMensaje();
+    return borrar;
+}
 
-function limpiarDatos() {
+/*function limpiarDatos() {
     if( nombre === "" || apellido === "" || edad === "" || telefono === "" || direccion === "" || ciudad === "" || comentario === ""){
         alert("No hay nada que limpiar");
     }else{
@@ -42,7 +39,7 @@ function limpiarMensaje() {
         document.getElementById("comentario").value = "";
     }
 }
-
+*/
 /*function validarCorreo(){
         var texto = document.getElementById("email").value;
         var regex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
@@ -54,4 +51,25 @@ function limpiarMensaje() {
         }
     
     
+}*/
+
+
+/*function enviarDatos() {
+let nombre = document.getElementById("nombre").value;
+let apellido = document.getElementById("apellido").value;
+let edad = document.getElementById("edad").value;   
+let email = document.getElementById("email").value;
+let telefono = document.getElementById("telefono").value;   
+let direccion = document.getElementById("direccion").value;
+let ciudad = document.getElementById("ciudad").value;
+let comentario = document.getElementById("comentario").value;
+
+
+if( nombre === "" || apellido === "" || edad === "" || telefono === "" || direccion === "" || ciudad === "" || comentario === ""){
+    alert("Todos los campos son obligatorios");
+}else{
+    alert("Datos enviados correctamente");
+    limpiarDatos();
+}
+
 }*/
